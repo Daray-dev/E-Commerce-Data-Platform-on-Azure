@@ -1,4 +1,4 @@
-🛒 Olist E-Commerce Data Platform on Azure
+E-Commerce Data Platform on Azure
 An end-to-end data engineering project using the Brazilian E-Commerce (Olist) dataset on Microsoft Azure. This project implements a full Lakehouse architecture — from raw ingestion to a star schema data warehouse — following modern data engineering best practices.
 
 🏗️ Architecture Overview
