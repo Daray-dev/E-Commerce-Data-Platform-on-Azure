@@ -4,8 +4,8 @@ CREATE TABLE cust_dataset (
 customer_id NVARCHAR(100) PRIMARY KEY,
 unique_id NVARCHAR(100),
 cust_zipcod INT,
-cust_city NVARCHAR(40),
-Cust_state NVARCHAR(10) 
+cust_city NVARCHAR(100),
+Cust_state NVARCHAR(100) 
 
 );
 
@@ -13,8 +13,8 @@ IF OBJECT_ID ('olist_geolaction_dataset', 'u') IS NOT NULL
    DROP TABLE olist_geolaction_dataset;
 CREATE TABLE olist_geolaction_dataset (
 geo_zip INT,
-geo_lat INT,
-geo_city NVARCHAR(20),
+geo_lat DECIMAL(18, 8),
+geo_city NVARCHAR(100),
 geo_state NVARCHAR(2)
 )
 IF OBJECT_ID ('olist_order_items_dataset', 'u') IS NOT NULL
