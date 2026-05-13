@@ -57,9 +57,9 @@ review_answer_timestamp DATETIME
 IF OBJECT_ID ('olist_orders', 'u') IS NOT NULL
    DROP TABLE olist_orders;
 CREATE TABLE olist_orders (
-  order_id NVARCHAR(50) PRIMARY KEY,
-    customer_id NVARCHAR(50),
-    order_status NVARCHAR(20),
+  order_id NVARCHAR(100) PRIMARY KEY,
+    customer_id NVARCHAR(100),
+    order_status NVARCHAR(100),
     order_purchase_timestamp DATETIME,
     order_approved_at DATETIME,
     order_delivered_carrier_date DATETIME,
